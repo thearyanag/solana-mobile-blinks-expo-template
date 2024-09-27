@@ -19,6 +19,12 @@ import {
 import { AppNavigator } from "./src/navigators/AppNavigator";
 import { ClusterProvider } from "./src/components/cluster/cluster-data-access";
 
+import {
+  BlinkContainer,
+  type BaseBlinkLayoutProps,
+  type BlinkContainerProps,
+} from '@dialectlabs/blinks-core';
+
 const queryClient = new QueryClient();
 
 export default function App() {

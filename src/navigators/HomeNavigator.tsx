@@ -4,7 +4,7 @@ import { TopBar } from "../components/top-bar/top-bar-feature";
 import { HomeScreen } from "../screens/HomeScreen";
 import MaterialCommunityIcon from "@expo/vector-icons/MaterialCommunityIcons";
 import { useTheme } from "react-native-paper";
-import BlankScreen from "../screens/BlankScreen";
+import BlinkScreen from "../screens/BlinkScreen";
 
 const Tab = createBottomTabNavigator();
 
@@ -30,7 +30,7 @@ export function HomeNavigator() {
                   color={color}
                 />
               );
-            case "Blank":
+            case "Blinks":
               return (
                 <MaterialCommunityIcon
                   name={
@@ -45,7 +45,7 @@ export function HomeNavigator() {
       })}
     >
       <Tab.Screen name="Home" component={HomeScreen} />
-      <Tab.Screen name="Blank" component={BlankScreen} />
+      <Tab.Screen name="Blinks" component={BlinkScreen} />
     </Tab.Navigator>
   );
 }
