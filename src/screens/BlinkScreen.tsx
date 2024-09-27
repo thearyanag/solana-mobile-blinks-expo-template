@@ -15,9 +15,9 @@ export default function BlinkScreen() {
   return (
     <ScrollView>
       <View style={styles.screenContainer}>
-        {actionsRegistry.length === 0 && <Text>No actions found</Text>}
-        {actionsRegistry?.map((action, index) =>
-          action ? <BlinkBox key={index} url={action} /> : null
+        {actionsRegistry.length > 0 &&
+          actionsRegistry?.map((action, index) =>
+            action ? <BlinkBox key={index} url={action} /> : null
         )}
       </View>
     </ScrollView>
